@@ -6,8 +6,15 @@ The official repository of paper "Multicenter deep learning-based automatic deli
 
 ## Usage
 
-*  Our model was developen upon [nnUNet](https://github.com/MIC-DKFZ/nnUNet) with five-fold cross-validation. Please refer to the original repository for environment setup.
+*  Our model was developen upon [nnUNet](https://github.com/MIC-DKFZ/nnUNet) with five-fold cross-validation. Please refer to the [official documentation](https://github.com/MIC-DKFZ/nnUNet/tree/master/documentation) for environment setup.
 *  We release the checkpoints of our trained models which can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1Kphc5yFCW6uRsRPYpAS3phy4twSZumFc?usp=share_link).
+*  After completing the environment setup and downloading the checkpoints, use the following command for segmentation. 
+```
+nnUNetv2_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -d DATASET_NAME_OR_ID -c CONFIGURATION --save_probabilities
+```
+*  Refer to [here](https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/how_to_use_nnunet.md) for more usage details.
+
+
 
 ## Acknowledgment
 
